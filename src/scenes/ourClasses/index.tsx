@@ -83,7 +83,7 @@ const OurClasses = ({ setSelectedPage }: Props) => {
           <ul className="w-[2800px] whitespace-nowrap">
             {classes.map((item: ClassType, index) => (
               <Class
-                key={`${item.name}-${index}`}
+                key={Math.random()}
                 name={item.name}
                 description={item.description}
                 image={item.image}
